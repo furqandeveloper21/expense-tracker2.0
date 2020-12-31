@@ -32,9 +32,6 @@ jobs:
       - uses: borales/actions-yarn@v2.0.0
         with: 
           cmd: install
-          
-          
-    
       - name: Basic react app
         run: yarn build
       - name: Install surge
