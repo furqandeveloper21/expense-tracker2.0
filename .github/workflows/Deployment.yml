@@ -11,7 +11,7 @@ on:
     branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+ # workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,16 +24,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+        #installing node environment
       - name: Setup Node.js environment
-      - uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@v2-beta
         with:
           node-version: 12 
       - uses: borales/actions-yarn@v2.0.0
         with: 
           cmd: install
       - name: Basic react app
-        run: yarn build
+        run: yarn build #install yarn and build
       - name: Install surge
       - run: npm install --g surge
       - name: Deploy to surge
