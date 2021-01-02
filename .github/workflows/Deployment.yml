@@ -23,7 +23,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout source code 
+        uses: actions/checkout@v2
         #installing node environment
       - name: Setup Node.js environment
         uses: actions/setup-node@v2-beta
@@ -35,6 +36,6 @@ jobs:
       - name: Basic react app
         run: yarn build #install yarn and build
       - name: Install surge
-      - run: npm install --g surge
+        run: npm install --g surge
       - name: Deploy to surge
-      - run: surge ./build expense-tracker-furqandeveloper21.surge.sh ${{ secrets.SURGE_TOKKEN }} 
+        run: surge ./build expense-tracker-furqandeveloper21.surge.sh ${{ secrets.SURGE_TOKKEN }} 
