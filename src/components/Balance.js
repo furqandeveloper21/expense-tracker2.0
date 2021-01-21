@@ -1,6 +1,6 @@
 import React from "react";
 
-function Balance () {
+const Balance = () =>  {
 
     return (
         <div>
