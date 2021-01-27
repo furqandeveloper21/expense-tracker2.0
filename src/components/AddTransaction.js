@@ -2,21 +2,19 @@ import React from "react";
 
 const AddTransaction = () => {
     return (
-        <div>
+        <div className='transaction-box'>
             <h3>Add New Transaction</h3>
             <div>
                 <form>
-                    <div>
-                     <label>Description</label>
-                     <input type='text' placeholder='Enter your description' />
-                    </div>
-                    <div>
-                     <label>Amount</label>
-                     <input type='text' placeholder='Enter your amount ' />
-                    </div>
-                    <div>
+                     <label>Description <br /> 
+                         <input type='text' placeholder='Enter your description' required />
+                    </label>
+                    <br />
+                     <label>Amount <br /> 
+                         <input type='text' placeholder='Enter your amount ' required />
+                    </label>
+                     <br />
                      <input type='submit' value='Add transaction' />
-                    </div>
                 </form>
             </div>
         </div>

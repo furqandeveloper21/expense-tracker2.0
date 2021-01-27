@@ -2,13 +2,9 @@ import React from "react";
 
 const AccountSummary = () => {
   return (
-    <div>
-      <h3>Income</h3>
-      <p>300$</p>
-      <div>
-        <h3>Expense</h3>
-        <p>300$</p>
-      </div>
+    <div className='expense-container'>
+      <h3>Income <br /> 300</h3>
+      <h3>Expense <br /> 300</h3>
     </div>
   );
 }

@@ -1,9 +1,45 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 .container {
-    text-align: center;
+    max-width: 400px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: lawngreen;
+    box-shadow: 0 0 10px black;
+    margin-top: 100px;
+    padding: 15px 50px;
     
+}
+.header {
+    text-align: center;
+}
+.expense-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+
+.transaction-list {
+    margin: 0;
+    padding: 0;
+}
+
+.transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px black;
+    padding: 5px 2px;
+    background-color: white;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.transaction-box input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 0;
+
 }

@@ -4,7 +4,7 @@ const Header = () => {
 
     return (
         <div>
-            <h1>Expense Tracker By Furqan</h1>
+            <h1 className='header'>Expense Tracker By Furqan</h1>
         </div>
     );
 }
