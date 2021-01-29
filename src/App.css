@@ -6,8 +6,8 @@
     max-width: 400px;
     min-height: 500px;
     margin: 0 auto;
-    background-color: lawngreen;
-    box-shadow: 0 0 10px black;
+    background-color: rgb(198, 211, 174);
+    box-shadow: 0 0 10px gray;
     margin-top: 100px;
     padding: 15px 50px;
     
@@ -42,4 +42,8 @@
     margin: 10px 0;
     padding: 5px 0;
 
+}
+
+.btn {
+    background-color: rgb(39, 105, 172);
 }

@@ -14,7 +14,7 @@ const AddTransaction = () => {
                          <input type='text' placeholder='Enter your amount ' required />
                     </label>
                      <br />
-                     <input type='submit' value='Add transaction' />
+                     <input type='submit' value='Add transaction' className='btn' />
                 </form>
             </div>
         </div>
