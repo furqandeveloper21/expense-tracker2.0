@@ -1,24 +1,20 @@
-import { React } from "react";
+import React, {useContext} from "react";
+import {GlobalContext} from "../context/GlobalContext";
+import { Transaction } from "./Transactions" ;
+
 
 const TransactionHistory = () => {
+
+    const { transactions } = useContext(GlobalContext); 
+
     return (
         <div className='transaction-list'>
             <h3>History</h3>
             <hr />
-            <ul>
-                <li>
-                    <span>Cash</span>
-                    <span>300</span>
-                </li>
-                <li>
-                    <span>Balance</span>
-                    <span>150</span>
-                </li>
-                <li>
-                    <span>Bill</span>
-                    <span>100</span>
-                </li>
-            </ul>
+            {transactions.map(transaction => (
+                <Transaction key={transaction.id} transaction={transaction} />
+            )
+            )}
          
         </div>
     );

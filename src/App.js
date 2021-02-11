@@ -4,16 +4,23 @@ import Balance from "./components/Balance";
 import AccountSummary from "./components/AccountSummary";
 import TransactionHistory from "./components/TransactionHistory";
 import AddTransaction from "./components/AddTransaction";
+import { GlobalProvider } from './context/GlobalContext';
+
+
 
 function App() {
    return (
-     <div className="container">
-       <Header />
-       <Balance />
-       <AccountSummary />
-       <TransactionHistory />
-       <AddTransaction />
-      </div>
+    
+     <GlobalProvider>
+        <div className="container"> 
+           <Header />
+           <Balance />
+           <AccountSummary />
+           <TransactionHistory />
+           <AddTransaction />
+       </div>
+      </GlobalProvider>
+   
    );
 }
 
